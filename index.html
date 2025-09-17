@@ -1,313 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egypt Outsourcing Services | ITS, BPS & ER&D Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', 'Segoe UI', sans-serif;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Egypt ITS — Invest in the Digital Powerhouse</title>
+  <meta name="description" content="Invest in Egypt's ITS sector: world‑class talent, competitive costs, strategic location, and a thriving innovation ecosystem." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS via CDN for GitHub Pages (no build step needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0E4D92', /* deep tech blue */
+            accent: '#E7B10A',  /* warm gold */
+            ink: '#0B132B',
+            muted: '#6B7280',
+            sky: '#F7FAFC'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            glow: '0 10px 30px rgba(14,77,146,0.25)',
+          }
         }
-        
-        body {
-            background-color: #f7fafc;
-            color: #0B132B;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #0E4D92;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-        
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: #6B7280;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(14, 77, 146, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(14, 77, 146, 0.2);
-        }
-        
-        .card-header {
-            padding: 25px 25px 15px;
-            background: linear-gradient(135deg, #0E4D92 0%, #0B132B 100%);
-            color: white;
-        }
-        
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .card-subtitle {
-            font-size: 1rem;
-            opacity: 0.9;
-            font-weight: 500;
-        }
-        
-        .card-body {
-            padding: 25px;
-        }
-        
-        .card-description {
-            color: #6B7280;
-            margin-bottom: 20px;
-            font-size: 1.05rem;
-        }
-        
-        .card-features {
-            margin-bottom: 25px;
-        }
-        
-        .feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-        
-        .feature-icon {
-            color: #E7B10A;
-            margin-right: 12px;
-            font-weight: bold;
-        }
-        
-        .feature-text {
-            color: #4B5563;
-        }
-        
-        .card-cta {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #0E4D92;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background 0.3s ease;
-        }
-        
-        .card-cta:hover {
-            background: #0a3a6e;
-        }
-        
-        .stats-section {
-            background: linear-gradient(135deg, #0E4D92 0%, #0B132B 100%);
-            color: white;
-            padding: 60px 20px;
-            margin-top: 80px;
-            border-radius: 12px;
-            text-align: center;
-        }
-        
-        .stats-title {
-            font-size: 2rem;
-            margin-bottom: 40px;
-            font-weight: 700;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #E7B10A;
-            margin-bottom: 10px;
-        }
-        
-        .stat-label {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .container-narrow { max-width: 1100px; }
+    .gradient-hero { background: radial-gradient(1200px 600px at 80% -100px, rgba(231,177,10,0.25), transparent), linear-gradient(180deg, #0B132B 0%, #0E4D92 60%, #0B132B 100%); }
+    .shine { position: relative; overflow: hidden; }
+    .shine::after { content: ""; position: absolute; top: 0; left: -150%; width: 50%; height: 100%; transform: skewX(-20deg); background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); animation: shine 5s infinite; }
+    @keyframes shine { 0% { left: -150%; } 60% { left: 130%; } 100% { left: 130%; } }
+  </style>
 </head>
-<body>
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Egypt's Global Outsourcing Services: ITS, BPS & ER&D Solutions</h2>
-            <p class="section-subtitle">Discover Egypt's premier outsourcing capabilities across three core service pillars, delivering world-class talent, cost efficiency, and innovation for global enterprises</p>
-        </div>
-        
-        <div class="services-grid">
-            <!-- ITS Card -->
-            <div class="service-card">
-                <div class="card-header">
-                    <h3 class="card-title">Egypt ITS Excellence: Software Development & IT Outsourcing</h3>
-                    <p class="card-subtitle">Enterprise-grade technology solutions with 70% cost savings</p>
-                </div>
-                <div class="card-body">
-                    <p class="card-description">Leverage Egypt's deep talent pool for end-to-end IT services, from custom software development to cloud transformation and cybersecurity.</p>
-                    
-                    <div class="card-features">
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">55,000+ annual tech graduates</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">70% cost savings vs. Western markets</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">Microsoft, IBM, and Oracle partnerships</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">Agile development methodologies</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="card-cta">Explore ITS Solutions</a>
-                </div>
-            </div>
-            
-            <!-- BPS Card -->
-            <div class="service-card">
-                <div class="card-header">
-                    <h3 class="card-title">Egypt BPS Solutions: Multilingual Business Process Services</h3>
-                    <p class="card-subtitle">Customer experience, F&A, and back-office excellence</p>
-                </div>
-                <div class="card-body">
-                    <p class="card-description">Access multilingual talent delivering exceptional business process services with 60% cost reduction and industry-leading quality metrics.</p>
-                    
-                    <div class="card-features">
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">Arabic, English, French, German, Spanish support</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">60% cost efficiency vs. European centers</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">Vodafone, Orange, and Concentrix partnerships</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">ISO-certified quality frameworks</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="card-cta">Discover BPS Services</a>
-                </div>
-            </div>
-            
-            <!-- ER&D Card -->
-            <div class="service-card">
-                <div class="card-header">
-                    <h3 class="card-title">Egypt ER&D Hub: Engineering Research & Development Center</h3>
-                    <p class="card-subtitle">Automotive, semiconductor, and embedded systems innovation</p>
-                </div>
-                <div class="card-body">
-                    <p class="card-description">Establish your engineering center of excellence in Egypt with specialized talent for cutting-edge R&D across multiple technology domains.</p>
-                    
-                    <div class="card-features">
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">30,000+ specialized engineering graduates annually</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">65% cost savings on engineering talent</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">Valeo, Siemens, and Brightskies partnerships</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span class="feature-text">100+ patents filed from Egyptian centers</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="card-cta">Explore ER&D Capabilities</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="stats-section">
-            <h3 class="stats-title">Egypt's Outsourcing Advantage: By The Numbers</h3>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">55K+</div>
-                    <div class="stat-label">Annual Tech Graduates</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">70%</div>
-                    <div class="stat-label">Cost Savings</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">#1</div>
-                    <div class="stat-label">Africa IT Outsourcing</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">74</div>
-                    <div class="stat-label">Global Company MOUs</div>
-                </div>
-            </div>
-        </div>
+<body class="font-sans text-ink bg-white">
+  <!-- NAV -->
+  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/70 border-b border-black/5">
+    <div class="mx-auto container-narrow px-4 py-3 flex items-center justify-between">
+      <a href="itida logo transp.png" class="flex items-center gap-2">
+        <span class="inline-block h-8 w-8 rounded bg-primary"></span>
+        <span class="font-extrabold tracking-tight text-primary">Egypt ITS</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#why" class="hover:text-primary">Why Egypt</a>
+        <a href="#proof" class="hover:text-primary">Recognition</a>
+        <a href="#talent" class="hover:text-primary">Talent</a>
+        <a href="#innovation" class="hover:text-primary">Innovation</a>
+        <a href="#video" class="hover:text-primary">Leaders Speak</a>
+      </nav>
+      <a href="#lead" class="px-4 py-2 rounded bg-primary text-white text-sm font-semibold hover:opacity-90">Request Investor Guide</a>
     </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="gradient-hero text-white pt-28">
+    <div class="mx-auto container-narrow px-4 pb-20">
+      <div class="grid md:grid-cols-2 items-center gap-10">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-black leading-tight">
+            Egypt: <span class="text-accent">The Digital Powerhouse</span> of the Future
+          </h1>
+          <p class="mt-4 text-lg text-white/90">
+            Home to world‑class multilingual talent, competitive costs, a pivotal location, and an innovation ecosystem backed by global leaders.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#video" class="px-5 py-3 rounded bg-accent text-ink font-semibold hover:opacity-95 shine">Watch the Story</a>
+            <a href="#why" class="px-5 py-3 rounded border border-white/30 font-semibold hover:bg-white/10">Explore the Value</a>
+          </div>
+          <div class="mt-10 grid grid-cols-3 gap-6 text-center">
+            <div>
+              <div class="text-3xl font-extrabold">70%+</div>
+              <div class="text-sm text-white/80">Potential cost savings</div>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold">55K+</div>
+              <div class="text-sm text-white/80">ICT grads / year</div>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold">60% </div>
+              <div class="text-sm text-white/80">Under age 30</div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-video rounded-xl overflow-hidden shadow-glow ring-1 ring-white/10 bg-black/20">
+            <!-- Replace the src below with your hosted hero video URL if you have one -->
+            <video autoplay muted loop playsinline poster="" class="w-full h-full object-cover">
+              <source src="ERnD.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="text-sm text-white/70 mt-3">Clip: Egypt’s tech parks & innovation hubs. (Replace with your video file if desired.)</p>
+        </div>
+      </div>
+
+      <!-- Logo strip -->
+      <div class="mt-14 py-6 rounded-xl border border-white/10 bg-white/5">
+        <p class="text-center text-sm uppercase tracking-widest text-white/60">Chosen by global leaders</p>
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-6 gap-6 items-center opacity-90">
+          <div class="text-center text-white/90 font-semibold">Microsoft</div>
+          <div class="text-center text-white/90 font-semibold">IBM</div>
+          <div class="text-center text-white/90 font-semibold">Amazon</div>
+          <div class="text-center text-white/90 font-semibold">Deloitte</div>
+          <div class="text-center text-white/90 font-semibold">Capgemini</div>
+          <div class="text-center text-white/90 font-semibold">Vodafone</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY EGYPT -->
+  <section id="why" class="py-20 bg-sky">
+    <div class="mx-auto container-narrow px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">Why Egypt</h2>
+        <p class="mt-3 text-lg text-muted">A strategic blend of talent, savings, location and a mature tech ecosystem.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Talent -->
+        <div class="p-6 rounded-xl bg-white shadow-sm ring-1 ring-black/5">
+          <div class="text-primary font-bold text-sm uppercase">Talent</div>
+          <p class="mt-2 text-sm text-muted">762K graduates yearly; 55K+ ICT grads across CS, Engineering, AI & Data. Multilingual and culturally aligned.</p>
+          <ul class="mt-4 text-sm list-disc list-inside text-muted">
+            <li>107M population; 60% under 30</li>
+            <li>116 universities; 30% STEM</li>
+          </ul>
+        </div>
+        <!-- Cost -->
+        <div class="p-6 rounded-xl bg-white shadow-sm ring-1 ring-black/5">
+          <div class="text-primary font-bold text-sm uppercase">Competitive Cost</div>
+          <p class="mt-2 text-sm text-muted">Up to 70% savings on core tech roles (Software, Cloud, Data, Cybersecurity). Ranked among top affordable talent locations.</p>
+        </div>
+        <!-- Location -->
+        <div class="p-6 rounded-xl bg-white shadow-sm ring-1 ring-black/5">
+          <div class="text-primary font-bold text-sm uppercase">Pivotal Location</div>
+          <p class="mt-2 text-sm text-muted">EET timezone enables “follow‑the‑sun”. Internet backbone links to 60+ countries via 13 routes. Extensive FTAs across 70+ countries.</p>
+        </div>
+        <!-- Developed Industry -->
+        <div class="p-6 rounded-xl bg-white shadow-sm ring-1 ring-black/5">
+          <div class="text-primary font-bold text-sm uppercase">Developed Industry</div>
+          <p class="mt-2 text-sm text-muted">Global players operate ITS, BPS & R&D at scale. 74 MoUs in 3 years creating 60K jobs; strong government enablement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOGNITION -->
+  <section id="proof" class="py-20">
+    <div class="mx-auto container-narrow px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">Global Recognition</h2>
+        <p class="mt-3 text-lg text-muted">Independent rankings validate Egypt’s maturity and momentum.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="text-2xl font-extrabold">#23 / #1 Africa</div>
+          <p class="text-sm text-muted">AT Kearney Global Services Location Index (2023).</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="text-2xl font-extrabold">Primary EMEA Location</div>
+          <p class="text-sm text-muted">Gartner for Global Delivery of IT & BPO (since 2019).</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="text-2xl font-extrabold">3rd — Confidence Index</div>
+          <p class="text-sm text-muted">Offshore BPO Confidence (2023) — Ryan Strategic Advisory.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="text-2xl font-extrabold">Top 10 Improver</div>
+          <p class="text-sm text-muted">Digital Inclusion Index — Roland Berger.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="text-2xl font-extrabold">+42 spots</div>
+          <p class="text-sm text-muted">GovTech Maturity Index (A) — IMF (2022).</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="text-2xl font-extrabold">1st in Africa</div>
+          <p class="text-sm text-muted">Fixed broadband speed — OOKLA (2022).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALENT -->
+  <section id="talent" class="py-20 bg-sky">
+    <div class="mx-auto container-narrow px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">A Deep, Future‑Ready Talent Pool</h2>
+        <p class="mt-3 text-lg text-muted">Scaled programs in AI, cyber, data, and cloud convert raw potential into immediate capability.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-white border border-black/10">
+          <div class="text-primary font-bold text-sm uppercase">Digital Egypt Pioneers</div>
+          <p class="mt-2 text-sm text-muted">90K graduates in 3 years across AI/ML, cloud, cybersecurity, data, software, and digital arts.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-black/10">
+          <div class="text-primary font-bold text-sm uppercase">Egypt FWD</div>
+          <p class="mt-2 text-sm text-muted">140K trained (2022–2023) including DevOps, data, autonomous systems, web/mobile, and testing.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-black/10">
+          <div class="text-primary font-bold text-sm uppercase">ITI Professional Training</div>
+          <p class="mt-2 text-sm text-muted">40+ tech tracks with thousands of grads across software, infra, media, AI/ML and embedded systems.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-white border border-black/10">
+          <div class="text-primary font-bold text-sm uppercase">Masters (DEBI)</div>
+          <p class="mt-2 text-sm text-muted">Digital Egypt Builders Initiative with global universities in Digital Art, Fintech, Cybersecurity, Data & AI, Robotics.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-black/10">
+          <div class="text-primary font-bold text-sm uppercase">Train‑to‑Hire</div>
+          <p class="mt-2 text-sm text-muted">Co‑funded programs with MNCs & local leaders to convert training into immediate employment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INNOVATION / INDUSTRY -->
+  <section id="innovation" class="py-20">
+    <div class="mx-auto container-narrow px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">Scale You Can Trust</h2>
+        <p class="mt-3 text-lg text-muted">From R&D to shared services, global firms choose Egypt to build at scale.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="font-semibold">VOIS</div>
+          <p class="text-sm text-muted">9 centers in 4 governorates, multilingual support, targeting 12,000 professionals in 3 years.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="font-semibold">Siemens Digital Industries Software</div>
+          <p class="text-sm text-muted">1,000 employees; 47 patents and 560 research papers; 20% annual growth.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="font-semibold">Valeo</div>
+          <p class="text-sm text-muted">3,200+ engineers; global software hub; ~100 patents filed from Egypt.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="font-semibold">Capgemini</div>
+          <p class="text-sm text-muted">Targeting 5,000 jobs by 2026 and $300M digital exports over 3 years.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="font-semibold">Amazon</div>
+          <p class="text-sm text-muted">1,600+ professionals; 65% serving international markets.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-black/10">
+          <div class="font-semibold">Brightskies</div>
+          <p class="text-sm text-muted">Regional R&D in autonomous driving & electrification; 400+ engineers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO + QUOTES -->
+  <section id="video" class="py-20 bg-sky">
+    <div class="mx-auto container-narrow px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-black">Leaders Speak</h2>
+        <p class="mt-3 text-lg text-muted">Hear from executives shaping the region’s digital future.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-8 items-start">
+        <div class="aspect-video rounded-xl overflow-hidden shadow-glow ring-1 ring-black/5 bg-black">
+          <!-- Replace the src below with your published video URL (YouTube/Vimeo/MP4) -->
+          <iframe class="w-full h-full" src="ERnD.mp4"
+                  title="Egypt ITS Leaders" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="space-y-4">
+          <figure class="p-5 rounded-xl bg-white border border-black/10">
+            <blockquote class="text-sm text-muted">“Egypt is a leader in digital transformation.”</blockquote>
+            <figcaption class="mt-2 text-sm font-medium">Microsoft — Mirna Aref</figcaption>
+          </figure>
+          <figure class="p-5 rounded-xl bg-white border border-black/10">
+            <blockquote class="text-sm text-muted">“We service clients across the globe from Egypt.”</blockquote>
+            <figcaption class="mt-2 text-sm font-medium">IBM — Marwa Abbas</figcaption>
+          </figure>
+          <figure class="p-5 rounded-xl bg-white border border-black/10">
+            <blockquote class="text-sm text-muted">“Egypt is becoming a digital powerhouse for the region — with global impact.”</blockquote>
+            <figcaption class="mt-2 text-sm font-medium">Amazon — Omar Elsahy</figcaption>
+          </figure>
+          <figure class="p-5 rounded-xl bg-white border border-black/10">
+            <blockquote class="text-sm text-muted">“The technical talent in Egypt is phenomenal.”</blockquote>
+            <figcaption class="mt-2 text-sm font-medium">Deloitte — Hani Girgis</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / LEAD FORM -->
+  <section id="lead" class="py-20">
+    <div class="mx-auto container-narrow px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-black">Invest in the Future — Invest in Egypt</h2>
+          <p class="mt-3 text-lg text-muted">Request the investor guide, sector benchmarks, and curated site visit support.</p>
+          <ul class="mt-5 space-y-2 text-sm text-muted">
+            <li>• Market insights & decision support</li>
+            <li>• Setup & legal establishment connections</li>
+            <li>• Recruitment partner introductions</li>
+            <li>• Dedicated account management</li>
+          </ul>
+        </div>
+        <form id="leadForm" class="p-6 rounded-xl bg-sky border border-black/10">
+          <!-- Note: For GitHub Pages, use a service like Formspree; keep action empty for now -->
+          <div class="grid gap-4">
+            <input required name="name" placeholder="Full name*" class="px-4 py-3 rounded border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input required type="email" name="email" placeholder="Work email*" class="px-4 py-3 rounded border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input name="org" placeholder="Organization" class="px-4 py-3 rounded border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <select name="interest" class="px-4 py-3 rounded border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary">
+              <option>Area of Interest</option>
+              <option>Software & Product Engineering</option>
+              <option>AI, Data & Analytics</option>
+              <option>Cloud & Cybersecurity</option>
+              <option>Business Process Services</option>
+              <option>R&D / Embedded Systems</option>
+            </select>
+            <textarea name="msg" rows="4" placeholder="Tell us about your plans…" class="px-4 py-3 rounded border border-black/10 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+            <button type="submit" class="px-5 py-3 rounded bg-primary text-white font-semibold hover:opacity-90">Request Investor Guide</button>
+            <p id="status" class="text-sm text-muted"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-black/5 bg-white">
+    <div class="mx-auto container-narrow px-4 text-sm text-muted">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <p>© <span id="year"></span> Egypt ITS. Powered by ITIDA & partners.</p>
+        <div class="flex items-center gap-4">
+          <a href="#why" class="hover:text-primary">Why Egypt</a>
+          <a href="#lead" class="hover:text-primary">Contact</a>
+        </div>
+      </div>
+      <p class="mt-4">Disclaimer: Benchmarks and recognitions are based on cited reports and partner statements. Replace placeholder video and form action before launch.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Lightweight client-side submit (works on GitHub Pages). 
+    // TODO: Replace with Formspree endpoint or your API; this just opens an email.
+    document.getElementById('leadForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const body = Array.from(fd.entries()).map(([k,v]) => k + ': ' + v).join('%0D%0A');
+      window.location.href = 'mailto:invest@itida.gov.eg?subject=Investor%20Guide%20Request&body=' + body;
+      document.getElementById('status').textContent = 'Opening your email client… If nothing happens, email invest@itida.gov.eg';
+    });
+  </script>
 </body>
 </html>
